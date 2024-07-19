@@ -12,7 +12,6 @@ function CreateUser() {
   function handleSubmit(e) {
     e.preventDefault();
 
-    console.log(username);
     if (!username) return;
     dispatch(updateName(username));
     navigate("/menu");
